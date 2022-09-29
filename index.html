@@ -24,6 +24,8 @@
 
             <div>
 
+                <!-- INPUTS -->
+
                 <h1>Login</h1>
 
                 <p class = "message-below-login">
@@ -32,17 +34,20 @@
 
                 <p class = "input-login">
                     <label for = "inputEmailId">Login</label>
-                    <input type = "email" name = "inputEmailClass" id = "inputEmailId" autocomplete="email" required>
+                    <input type = "email" name = "inputEmailClass" id = "inputEmailId" autocomplete="email" placeholder = "Sign in with your login" required>
                 </p>
                 <p class = "input-passwd">
                     <label for = "inputPassId">Passwd</label>
-                    <input type = "password" name = "inputPassClass" id = "inputPassId" autocomplete="current-password" required>
+                    <input type = "password" name = "inputPassClass" id = "inputPassId" autocomplete="current-password" placeholder = "Enter your password" required>
+                </p>
+
+
+                <!-- Buttons -->
+                <p>
+                    <button class = "buttonLogin" id = "buttonLoginId">Log In</button>
                 </p>
                 <p>
-                    <a href="./html/finish.html"><button class = "buttonLogin">Log In</button></a>
-                </p>
-                <p>
-                    <a href="./html/forgot.html"><button class = "buttonForgot">I Forgot</button></a>
+                    <a href="./html/forgot.html"><button class = "buttonForgot" id = "buttonForgotId">I Forgot</button></a>
                 </p>
                 
             </div>
@@ -55,5 +60,7 @@
         <p>&copy Create by Lucas Carvalho</p>
     </footer>
     
+    <script src = "./javascript/script.js"></script>
+
 </body>
 </html>
