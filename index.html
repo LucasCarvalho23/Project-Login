@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
     <title>Project Login</title>
 </head>
 <body>
+
+    <main class = "main-container">
+
+        <section>
+
+            <div>
+                <picture>
+                    <img src = "./image/img-welcome.jpg" alt = "imgLogin">
+                </picture>
+            </div>
+
+            <div>
+
+                <h1>Login</h1>
+
+                <p class = "message-below-login">
+                    Login to access your account.
+                </p>
+
+                <p class = "input-login">
+                    <label for = "inputEmailId">Login</label>
+                    <input type = "email" name = "inputEmailClass" id = "inputEmailId" autocomplete="email" required>
+                </p>
+                <p class = "input-passwd">
+                    <label for = "inputPassId">Passwd</label>
+                    <input type = "password" name = "inputPassClass" id = "inputPassId" autocomplete="current-password" required>
+                </p>
+                <p>
+                    <a href="./html/finish.html"><button class = "buttonLogin">Log In</button></a>
+                </p>
+                <p>
+                    <a href="./html/forgot.html"><button class = "buttonForgot">I Forgot</button></a>
+                </p>
+                
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy Create by Lucas Carvalho</p>
+    </footer>
     
 </body>
 </html>
