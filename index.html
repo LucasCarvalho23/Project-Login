@@ -6,63 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/mediaquery.css">
-    <link rel="stylesheet" href="./css/mediaquery-tablet.css">
+    <link rel = "stylesheet" href = "./css/style.css">
 
     <title>Project Login</title>
 </head>
 <body>
 
-    <main class = "main-container">
+    <main>
 
-        <section>
+        <section class = "container-class">
 
-            <div>
-                <picture>
-                    <img src = "./image/img-welcome.jpg" alt = "imgLogin">
-                </picture>
+            <!-- IMG -->
+            <div class = "container-img-class">
+                <!-- Here goes the img-->
             </div>
 
-            <div>
-
-                <!-- INPUTS -->
-
-                <h1>Login</h1>
-
-                <p class = "message-below-login">
-                    Login to access your account.
-                </p>
-
-                <p class = "input-login">
-                    <label for = "inputEmailId">Login</label>
-                    <input type = "email" name = "inputEmailClass" id = "inputEmailId" autocomplete="email" placeholder = "Sign in with your login" required>
-                </p>
-                <p class = "input-passwd">
-                    <label for = "inputPassId">Passwd</label>
-                    <input type = "password" name = "inputPassClass" id = "inputPassId" autocomplete="current-password" placeholder = "Enter your password" required>
-                </p>
-
-
-                <!-- Buttons -->
-                <p class = "buttonLoginP">
-                    <button class = "buttonLogin" id = "buttonLoginId">Log In</button>
-                </p>
-                <p class = "buttonForgotP">
-                    <a href="./html/forgot.html"><button class = "buttonForgot" id = "buttonForgotId">I Forgot</button></a>
-                </p>
+            <!-- FORM -->
+            <div class = "container-form-class">
                 
+                <h1> Login </h1>
+
+                <p> Login to access your account. </p>
+
+                <form action="login.php" method="post">
+
+                </form>
+
             </div>
 
         </section>
 
     </main>
 
-    <footer>
-        <p>&copy Create by Lucas Carvalho</p>
-    </footer>
-    
+    <!-- JavaScript -->
     <script src = "./javascript/script.js"></script>
-
+    
 </body>
 </html>
