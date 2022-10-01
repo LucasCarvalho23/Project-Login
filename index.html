@@ -32,6 +32,7 @@
 
                 <form action="login.php" method="post" autocomplete = "on">
 
+                    <!-- E-mail -->
                     <div class = container-form-label-class>
                         <span class="material-icons">account_circle</span>
                         
@@ -40,16 +41,23 @@
                         <label for = "login-id">Login</label>
                     </div>
                     
+
+                    <!-- Password -->
                     <div class = container-form-label-class>
                         <span class="material-icons">fingerprint</span>
 
                         <input type = "password" name = "password-class" id = "password-id" placeholder = "Your password" minlength = "8" maxlength = "12" autocomplete = "current-password" required>
 
-                        <label for = "password-id">Password</label>
+                        <label for = "password-id">Pass</label>
                     </div>
 
+
+                    <!-- Log In -->
                     <input type = "submit" value = "Log In">
-                    <a href = "forgot.html"> 
+
+
+                    <!-- Forgot the password -->
+                    <a href = "forgot.html" class = button-forgot-class> 
                         Forgot The Password 
                         <span class="material-icons">report_problem</span>
                     </a>

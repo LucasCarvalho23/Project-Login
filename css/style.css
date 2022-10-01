@@ -10,7 +10,9 @@
 :root {
     --green: #49a09d;
     --lilac: #5f2c82;
+    --stronglilac: #421e5a;
     --pink: rgb(243, 112, 232);
+    --strongtpink: rgb(184, 68, 174);
 }
 
 
@@ -38,7 +40,7 @@ main {
     position: absolute;
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 475px;
     border-radius: 20px;
     top: 50%;
     left: 50%;
@@ -59,8 +61,21 @@ main {
     height: 200px;
 }
 
-
 /* FORM */
+
+.container-form-label-class {
+    display: block;
+    background-color: var(--pink);
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+label {
+    display: none;
+}
+
 .container-class > .container-form-class {
     display: block;
     padding: 10px;
@@ -73,4 +88,50 @@ main {
 
 .container-class > .container-form-class > p {
     font-size: .8em;
+    padding-bottom: 10px;
+}
+
+
+/* BUTTONS */
+form > input[type = submit] {
+    background-color: var(--lilac);
+    color: white;
+    font-weight: bold;
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type = submit]:hover {
+    background-color: white;
+    border: 2px solid var(--lilac);
+    color: var(--lilac);
+    translate: background .5s;
+}
+
+form > .button-forgot-class {
+    display: block;
+    background-color: var(--green);
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    border: 2px solid var(--green);
+    border-radius: 7px;
+    text-decoration: none;
+    padding-top: 5px; 
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+form > .button-forgot-class:hover {
+    background-color: white;
+    border: 2px solid var(--green);
+    color: var(--green);
+    translate: background .5s;
 }
