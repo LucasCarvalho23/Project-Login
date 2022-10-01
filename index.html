@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS -->
+    <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
     <link rel = "stylesheet" href = "./css/style.css">
     <link rel = "stylesheet" href = "./css/media-query.css">
 
@@ -29,7 +30,29 @@
 
                 <p> Login to access your account. </p>
 
-                <form action="login.php" method="post">
+                <form action="login.php" method="post" autocomplete = "on">
+
+                    <div class = container-form-label-class>
+                        <span class="material-icons">account_circle</span>
+                        
+                        <input type = "email" name = "login-class" id = "login-id" placeholder = "Your e-mail" autocomplete = "email" maxlength = "30" required>
+
+                        <label for = "login-id">Login</label>
+                    </div>
+                    
+                    <div class = container-form-label-class>
+                        <span class="material-icons">fingerprint</span>
+
+                        <input type = "password" name = "password-class" id = "password-id" placeholder = "Your password" minlength = "8" maxlength = "12" autocomplete = "current-password" required>
+
+                        <label for = "password-id">Password</label>
+                    </div>
+
+                    <input type = "submit" value = "Log In">
+                    <a href = "forgot.html"> 
+                        Forgot The Password 
+                        <span class="material-icons">report_problem</span>
+                    </a>
 
                 </form>
 

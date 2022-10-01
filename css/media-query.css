@@ -11,6 +11,12 @@
 
 @charset "UTF-8";
 
+:root {
+    --green: #49a09d;
+    --lilac: #5f2c82;
+    --pink: rgb(243, 112, 232);
+}
+
 
 /* TABLET*/
 
@@ -21,7 +27,7 @@
     }
 
     body{
-        background-image: linear-gradient(to top, #49a09d, #5f2c82 );
+        background-image: linear-gradient(to top, var(--pink), var(--lilac));
     }
 
 
@@ -52,7 +58,7 @@
     }
 
     body{
-        background-image: linear-gradient(to top, #49a09d, #5f2c82 );
+        background-image: linear-gradient(to top, var(--pink), var(--lilac));
     }
 
 
@@ -69,6 +75,14 @@
     .container-class > .container-form-class {
         float: left;
         width: 50%;
+    }
+
+    .container-class > .container-form-class > h1 {
+        font-size: 2em;
+    }
+
+    .container-class > .container-form-class > p {
+        font-size: 1.2em;
     }
 
 }
