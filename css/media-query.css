@@ -10,3 +10,30 @@
 */
 
 @charset "UTF-8";
+
+
+/* TABLET*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    .container-class {
+        width: 90vw;
+    }
+
+
+    /* IMG */
+    .container-class > .container-img-class {
+        float: left;    
+        background-position:left top;
+        width: 30%;
+        height: 100%;
+    }
+
+    
+    /* FORM */
+    .container-class > .container-form-class {
+        float: right;
+        width: 70%;
+    }
+
+}

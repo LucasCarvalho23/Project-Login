@@ -51,7 +51,7 @@ main {
     display: block;
     background: var(--lilac) url(../image/img-welcome.jpg) no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: top right;
     height: 200px;
 }
 
