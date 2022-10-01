@@ -17,7 +17,11 @@
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
     .container-class {
-        width: 90vw;
+        width: 80vw;
+    }
+
+    body{
+        background-image: linear-gradient(to top, #49a09d, #5f2c82 );
     }
 
 
@@ -34,6 +38,37 @@
     .container-class > .container-form-class {
         float: right;
         width: 70%;
+    }
+
+}
+
+
+/* DESKTOP AND BIG SCREENS */
+
+@media screen and (min-width: 993px) {
+
+    .container-class {
+        width: 950px;
+    }
+
+    body{
+        background-image: linear-gradient(to top, #49a09d, #5f2c82 );
+    }
+
+
+    /* IMG */
+    .container-class > .container-img-class {
+        float: right;    
+        background-position:right center;
+        width: 50%;
+        height: 100%;
+    }
+
+    
+    /* FORM */
+    .container-class > .container-form-class {
+        float: left;
+        width: 50%;
     }
 
 }
